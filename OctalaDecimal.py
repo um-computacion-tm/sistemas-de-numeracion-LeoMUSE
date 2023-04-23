@@ -1,11 +1,12 @@
-def binarioaDecimal(Num):
+def octalaDecimal(Num):
 
+    Num = str(Num)
     posicion = 0
     decimal = 0
     Num = Num[::-1]
 
     for digito in Num:
-        multiplicador = 2**posicion
+        multiplicador = 8**posicion
         decimal += int(digito) * multiplicador
         posicion += 1
 

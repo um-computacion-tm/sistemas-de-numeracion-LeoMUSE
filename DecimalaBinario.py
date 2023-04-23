@@ -5,15 +5,14 @@ def decimalaBinario(Num):
     binario = str("")
     
     while Num > 0:
-    
-        residuo = int(Num % 2)
+        resto = int(Num % 2)
         Num = int(Num / 2)
-        binario = str(residuo) + binario
+        binario = str(resto) + binario
     
     while len(binario) % 8 != 0:
         binario = "0" + binario
 
-    return binario
+    return str(binario)
 
     if __name__ == '__main__':
         pass

@@ -9,7 +9,19 @@ def binarioaDecimal(Num):
         decimal += int(digito) * multiplicador
         posicion += 1
 
-    return int(decimal)
-        
+    return decimal
+
+def binarioaOctal(Num):
+    
+    decimal = binarioaDecimal(Num)
+    octal = ""
+   
+    while decimal > 0:
+        resto = decimal % 8
+        octal = str(resto) + octal
+        decimal = decimal // 8
+
+    return int(octal)
+
 if __name__ == '__main__':
     pass
